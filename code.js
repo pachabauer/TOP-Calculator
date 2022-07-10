@@ -19,7 +19,7 @@ footer.textContent = "Copyright © 2022 pachaB";
 
 // for loop to create items in rowCalcu
 const items = document.querySelector(".rowCalculator");
-for (c = 0; c < 3 * 6; c++) {
+for (c = 0; c < 19; c++) {
     let cell = document.createElement("div");
     items.appendChild(cell).className = `item${c}`;
 }
