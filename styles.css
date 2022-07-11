@@ -7,12 +7,12 @@ body {
     justify-content: center;
 }
 
-.title, .rowCalculator, .footer { 
+.title, .rowCalculator, footer { 
     display:grid;
 }
 
 .title { 
-    grid-area: 1/1/1/-1;
+    grid-area: 1/2/1/2;
     font-family: 'Calculator', sans-serif;
     justify-content: center;
     font-size: 60pt; 
@@ -31,12 +31,7 @@ body {
        
 }
 
-.rowCalculator div {
-    border-style: solid;
-    border-color: black;
-}
-
-.footer {
+footer {
     grid-area: 3/2/-1/2;
     font-family: 'Calculator', sans-serif;
     justify-content: center;
@@ -46,37 +41,68 @@ body {
     opacity: 60%;
     align-items:flex-end;
     
-    
-    
 }
 
-.item0 { 
+.item1 { 
     grid-column: span 4;
-    grid-row: span 2;
+    grid-row: span 4;
     background-color: #E6FFE3;
     opacity: 90%;
-    
-    
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+
 }
 
-.item14 { 
-    background-color: #500472;
-}
+.item15 { 
+    background-color: #f783da;
+    border-radius: 25%;
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
 
-.item17 { 
-    grid-column: span 2;
-    background-color: #ff6e40;
 }
 
 .item18 { 
     grid-column: span 2;
-    background-color: #097770;
-}
-.item4, .item8, .item12, .item15, .item16 { 
-    background-color: #ffc13b;
+    background-color: #ff6e40;
+    border-radius: 10%;
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+
 }
 
-.item1, .item2, .item3, .item5, .item6, .item7, .item9, .item10, .item11, .item13 {
+.item19 { 
+    grid-column: span 2;
+    background-color: #097770;
+    border-radius: 10%;
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+
+}
+
+.item5, .item9, .item13, .item16, .item17 { 
+    background-color: #ffc13b;
+    border-radius: 50%;
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+
+}
+
+.item2, .item3, .item4, .item6, .item7, .item8, .item10, .item11, .item12, .item14 {
     background-color: whitesmoke;
     opacity: 90%;
+    border-radius: 25%;
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+
 }
+
+a {
+    color: #DC143C;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+ }
