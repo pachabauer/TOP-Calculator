@@ -1,8 +1,10 @@
 body {     
     display: grid;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: auto 600px 1fr;
+    min-height: 99vh;
     background-color: #121212;
+    justify-content: center;
 }
 
 .title, .rowCalculator, .footer { 
@@ -17,13 +19,13 @@ body {
     font-weight: 900;    
     color: white;       
     opacity: 87%;
+    padding-bottom: 30px;
                                                 
 }
 
 .rowCalculator {
     grid-area: 2/2/2/2;
-    height: 600px;
-    grid-template-columns: repeat(4);    
+    grid-template-columns: repeat(4, minmax(80px, 100px));    
     grid-template-rows: repeat(6,auto);
     gap: 20px;
        
@@ -35,13 +37,17 @@ body {
 }
 
 .footer {
-    grid-area: 3/2/3/2;
+    grid-area: 3/2/-1/2;
     font-family: 'Calculator', sans-serif;
     justify-content: center;
     font-size: 20pt; 
     font-weight: 400;    
     color: white;       
     opacity: 60%;
+    align-items:flex-end;
+    
+    
+    
 }
 
 .item0 { 
@@ -49,6 +55,7 @@ body {
     grid-row: span 2;
     background-color: #E6FFE3;
     opacity: 90%;
+    
     
 }
 
