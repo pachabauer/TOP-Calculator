@@ -42,7 +42,7 @@ footer {
   align-items: flex-end;
 }
 
-#item1 {
+#screenDisplay {
   grid-column: span 4;
   grid-row: span 4;
   background-color: #e6ffe3;
@@ -50,6 +50,10 @@ footer {
   font-size: 70px;
   font-family: "Calculator", sans-serif;
   border-radius: 10px;
+  text-align: end;
+  word-wrap: break-word;
+  word-break: break-all;
+  
 }
 
 #item15 {
